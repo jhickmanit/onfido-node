@@ -1,6 +1,7 @@
 import { AxiosInstance } from "axios";
 import { Addresses } from "./resources/Addresses";
 import { Applicants } from "./resources/Applicants";
+import { Extractions } from "./resources/Autofill";
 import { Checks } from "./resources/Checks";
 import { Documents } from "./resources/Documents";
 import { LivePhotos } from "./resources/LivePhotos";
@@ -29,5 +30,6 @@ export declare class Onfido {
     readonly address: Addresses;
     readonly webhook: Webhooks;
     readonly sdkToken: SdkTokens;
+    readonly extractions: Extractions;
     constructor({ apiToken, region, timeout, unknownApiUrl }: OnfidoOptions);
 }

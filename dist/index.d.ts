@@ -4,6 +4,7 @@ export { OnfidoError } from "./errors/OnfidoError";
 export { OnfidoApiError } from "./errors/OnfidoApiError";
 export { WebhookEvent, WebhookEventVerifier } from "./WebhookEventVerifier";
 export { Applicant, ApplicantRequest } from "./resources/Applicants";
+export { Extraction, ExtractionRequest } from "./resources/Autofill";
 export { Address, AddressRequest } from "./resources/Addresses";
 export { IdNumber, IdNumberRequest } from "./resources/IdNumbers";
 export { Document, DocumentRequest } from "./resources/Documents";

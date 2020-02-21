@@ -205,6 +205,15 @@ class Applicants extends Resource {
     }
 }
 
+class Extractions extends Resource {
+    constructor(axiosInstance) {
+        super("extractions", axiosInstance);
+    }
+    async extract(extractionRequest) {
+        return this.request({ method: Method.POST, body: extractionRequest });
+    }
+}
+
 class Checks extends Resource {
     constructor(axiosInstance) {
         super("checks", axiosInstance);
@@ -391,6 +400,7 @@ class Onfido {
         this.address = new Addresses(this.axiosInstance);
         this.webhook = new Webhooks(this.axiosInstance);
         this.sdkToken = new SdkTokens(this.axiosInstance);
+        this.extractions = new Extractions(this.axiosInstance);
     }
 }
 
