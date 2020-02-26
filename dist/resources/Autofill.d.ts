@@ -25,11 +25,16 @@ export declare type ExtractedData = {
     mrzLine1?: string | null;
     mrzLine2?: string | null;
     mrzLine3?: string | null;
-    addressLine1?: string | null;
-    addressLine2?: string | null;
-    addressLine3?: string | null;
-    addressLine4?: string | null;
-    addressLine5?: string | null;
+    addressLine_1?: string | null;
+    addressLine_2?: string | null;
+    addressLine_3?: string | null;
+    addressLine_4?: string | null;
+    addressLine_5?: string | null;
+    documentNumber?: string | null;
+    documentType?: string | null;
+    issuingCountry?: string | null;
+    issuingDate?: string | null;
+    issuingState?: string | null;
 };
 export declare class Extractions extends Resource<ExtractionRequest> {
     constructor(axiosInstance: AxiosInstance);
